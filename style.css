@@ -449,7 +449,7 @@ code {
     border-radius: var(--radius-lg);
     padding: 28px;
     display: grid;
-    grid-template-columns: 60px 1fr;
+    grid-template-columns: 1fr;
     gap: 20px;
     align-items: flex-start;
 }

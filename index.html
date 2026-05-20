@@ -34,7 +34,7 @@
         <section class="hero">
             <div class="container hero-inner">
                 <div class="hero-text">
-                    <span class="badge">v0.1.0 · GPL-3.0</span>
+                    <span class="badge">v0.2.4 · GPL-3.0</span>
                     <h1>A modern archive manager<br><span class="gradient-text">for the Linux desktop</span></h1>
                     <p class="lede">AkiZip is a clean, fast, and friendly tool for everyday compression and extraction. No clutter, no surprises — just a window that gets out of your way.</p>
                     <div class="hero-cta">
@@ -47,7 +47,7 @@
                     <div class="hero-meta">
                         <span><strong>Linux</strong> only</span>
                         <span class="dot">·</span>
-                        <span>EN / 简中 / 繁中</span>
+                        <span>EN / zh-hans / zh-hant / FR / IT / DE / PL</span>
                         <span class="dot">·</span>
                         <span>Sandboxed</span>
                     </div>
@@ -79,7 +79,7 @@
                     <article class="card">
                         <div class="card-icon icon-green">📦</div>
                         <h3>Wide Format Support</h3>
-                        <p>Open and create archives in many popular formats, including <code>.7z</code>, <code>.zip</code>, <code>.tar</code>, <code>.tar.gz</code>, and more.</p>
+                        <p>Open and create archives in many popular formats, including <code>.7z</code>, <code>.zip</code>, <code>.tar</code>, <code>.tar.gz</code>, <code>.tar.xz</code>, <code>.tar.bz2</code>, <code>.xz</code>, <code>.bz2</code>, <code>.iso</code>, and more.</p>
                     </article>
                     <article class="card">
                         <div class="card-icon icon-orange">⚡</div>
@@ -99,7 +99,7 @@
                     <article class="card">
                         <div class="card-icon icon-teal">🌍</div>
                         <h3>Multilingual</h3>
-                        <p>Ships with English, Simplified Chinese, and Traditional Chinese. Community translations are warmly welcomed.</p>
+                        <p>Ships with English, Simplified Chinese, Traditional Chinese, French, Italian, German, and Polish. Community translations are warmly welcomed.</p>
                     </article>
                 </div>
             </div>
@@ -118,8 +118,13 @@
                     <div class="format-chip"><span class="ext">.zip</span><span class="desc">Universal</span></div>
                     <div class="format-chip"><span class="ext">.tar</span><span class="desc">Bundle</span></div>
                     <div class="format-chip"><span class="ext">.tar.gz</span><span class="desc">Compressed bundle</span></div>
+                    <div class="format-chip"><span class="ext">.tar.xz</span><span class="desc">Compressed bundle</span></div>
+                    <div class="format-chip"><span class="ext">.tar.bz2</span><span class="desc">Compressed bundle</span></div>
                     <div class="format-chip"><span class="ext">.gz</span><span class="desc">Single file</span></div>
+                    <div class="format-chip"><span class="ext">.xz</span><span class="desc">High compression</span></div>
+                    <div class="format-chip"><span class="ext">.bz2</span><span class="desc">Burrows-Wheeler</span></div>
                     <div class="format-chip"><span class="ext">.rar</span><span class="desc">Read only</span></div>
+                    <div class="format-chip"><span class="ext">.iso</span><span class="desc">Disk image</span></div>
                 </div>
             </div>
         </section>
@@ -173,33 +178,15 @@
             <div class="container">
                 <div class="section-head">
                     <span class="eyebrow">Get Started</span>
-                    <h2>Install AkiZip in three steps</h2>
-                    <p class="section-sub">Distributed as a sandboxed bundle with minimal default permissions.</p>
+                    <h2>Install AkiZip</h2>
+                    <p class="section-sub">One command from Flathub. Sandboxed with minimal default permissions.</p>
                 </div>
 
                 <div class="install-steps">
                     <div class="step">
-                        <div class="step-num">1</div>
                         <div class="step-body">
-                            <h3>Clone the repository</h3>
-                            <pre><code>git clone https://github.com/akizip/akizip.git
-cd akizip</code><button class="copy-btn" data-copy="git clone https://github.com/akizip/akizip.git
-cd akizip">Copy</button></pre>
-                        </div>
-                    </div>
-                    <div class="step">
-                        <div class="step-num">2</div>
-                        <div class="step-body">
-                            <h3>Build the bundle</h3>
-                            <pre><code>flatpak-builder --user --install --force-clean \
-    build-dir top.akizip.akizip.json</code><button class="copy-btn" data-copy="flatpak-builder --user --install --force-clean build-dir top.akizip.akizip.json">Copy</button></pre>
-                        </div>
-                    </div>
-                    <div class="step">
-                        <div class="step-num">3</div>
-                        <div class="step-body">
-                            <h3>Launch AkiZip</h3>
-                            <pre><code>flatpak run top.akizip.akizip</code><button class="copy-btn" data-copy="flatpak run top.akizip.akizip">Copy</button></pre>
+                            <h3>Install from Flathub</h3>
+                            <pre><code>flatpak install flathub top.akizip.akizip</code><button class="copy-btn" data-copy="flatpak install flathub top.akizip.akizip">Copy</button></pre>
                         </div>
                     </div>
                 </div>
