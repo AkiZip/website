@@ -5,6 +5,20 @@
     const yearEl = document.getElementById('year');
     if (yearEl) yearEl.textContent = new Date().getFullYear();
 
+    /* ---- Version badge from GitHub ---- */
+    const versionBadge = document.getElementById('version-badge');
+    if (versionBadge) {
+        fetch('https://raw.githubusercontent.com/AkiZip/AkiZip/HEAD/meson.build', {
+            cache: 'no-store'
+        })
+            .then(response => response.text())
+            .then(meson => {
+                const match = meson.match(/version\s*:\s*['"]([^'"]+)['"]/);
+                if (!match) throw new Error('Version not found in meson.build');
+                versionBadge.textContent = `v${match[1]} · GPL-3.0`;
+            });
+    }
+
     /* ---- Mobile nav toggle ---- */
     const toggle = document.querySelector('.nav-toggle');
     const navLinks = document.querySelector('.nav-links');
