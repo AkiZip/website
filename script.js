@@ -38,7 +38,12 @@
     /* ---- Copy buttons ---- */
     document.querySelectorAll('.copy-btn').forEach(btn => {
         btn.addEventListener('click', async () => {
-            const text = btn.getAttribute('data-copy') || '';
+            let text = btn.getAttribute('data-copy') || '';
+            const targetSel = btn.getAttribute('data-copy-target');
+            if (targetSel) {
+                const target = document.querySelector(targetSel);
+                if (target) text = target.innerText;
+            }
             try {
                 if (navigator.clipboard && window.isSecureContext) {
                     await navigator.clipboard.writeText(text);

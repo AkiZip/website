@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenPGP Keys — AkiZip</title>
+    <meta name="description" content="Developer OpenPGP public key and YubiKey attestation certificates for the AkiZip project.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+</head>
+<body>
+    <header class="blog-header navbar">
+        <div class="blog-header-inner">
+            <div class="blog-identity">
+                <a href="https://blog.akizip.top/" class="blog-logo" aria-label="AkiZip home">
+                    <img src="assets/logo.svg" alt="AkiZip" width="52" height="52">
+                </a>
+                <div class="blog-branding">
+                    <p class="blog-title"><a href="https://blog.akizip.top/">AkiZip</a></p>
+                    <p class="blog-tagline">Projects, dev logs, and more.</p>
+                </div>
+            </div>
+
+            <nav class="nav-links blog-navigation" aria-label="Navigation">
+                <a href="https://blog.akizip.top/">Blog</a>
+                <a href="https://matrix.to/#/#akizip:matrix.org" target="_blank" rel="noopener">Matrix</a>
+                <a href="https://github.com/AkiZip">GitHub</a>
+                <a href="openpgp.html" aria-current="page">OpenPGP</a>
+                <a href="https://blog.akizip.top/about-us/">About Us</a>
+            </nav>
+            <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+                <span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <div class="section-head">
+                    <span class="eyebrow">Security</span>
+                    <h2>OpenPGP Keys</h2>
+                    <p class="section-sub">Releases and commits are signed with the developer key below. The private keys live on YubiKey hardware tokens — the attestation certificates below prove that each key was generated on-device and never existed outside the hardware.</p>
+                </div>
+
+                <!-- ============ Developer public key ============ -->
+                <div class="pgp-narrow">
+                <article class="pgp-card">
+                    <h3>Developer Public Key</h3>
+                    <dl class="pgp-meta">
+                        <div><dt>Developer</dt><dd>ckappgit</dd></div>
+                        <div><dt>Fingerprint</dt><dd><code>507824520197D9E8F4C8725BC7AE4153E7BAF80B</code></dd></div>
+                        <div><dt>Key type</dt><dd>rsa4096</dd></div>
+                    </dl>
+                    <pre class="pgp-pre" id="pgp-pubkey"><code>-----BEGIN PGP PUBLIC KEY BLOCK-----
+
+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
+=6R8d
+-----END PGP PUBLIC KEY BLOCK-----</code></pre>
+                    <button class="copy-btn pgp-copy" data-copy-target="#pgp-pubkey">Copy</button>
+                </article>
+                </div>
+
+                <!-- ============ YubiKey attestation certificates ============ -->
+                <div class="section-head pgp-attest-head">
+                    <h2>YubiKey Attestation Certificates</h2>
+                    <p class="section-sub">Each OpenPGP slot on a YubiKey holds an attestation certificate signed by Yubico's attestation CA, chaining to the device.</p>
+                </div>
+
+                <div class="pgp-narrow">
+                    <article class="pgp-card">
+                        <h3>Signature Key <span class="pgp-slot">SIG</span></h3>
+                        <p class="pgp-slot-desc">Attestation for the signature (signing) slot.</p>
+                        <dl class="pgp-meta">
+                            <div><dt>Developer</dt><dd>ckappgit</dd></div>
+                            <div><dt>Fingerprint</dt><dd><code>507824520197D9E8F4C8725BC7AE4153E7BAF80B</code></dd></div>
+                        </dl>
+                        <pre class="pgp-pre" id="pgp-attest-sig"><code>-----BEGIN CERTIFICATE-----
+MIIEnzCCA4egAwIBAgIQAYs3yE9FjKhPq0VK7+v6WjANBgkqhkiG9w0BAQsFADAj
+MSEwHwYDVQQDDBhZdWJpS2V5IE9QR1AgQXR0ZXN0YXRpb24wIBcNMjQxMjAxMDAw
+MDAwWhgPOTk5OTEyMzEyMzU5NTlaMCcxJTAjBgNVBAMMHFl1YmlLZXkgT1BHUCBB
+dHRlc3RhdGlvbiBTSUcwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQC5
+JUCUkj1R+w7ggpeTWr38ahWN8bF0C9jYwgXF6OpinqPvYA7itH1fGv6NlpvwPr1M
+SHSE/SVKzBCoXGyh+DtcUqgr1m4h1MPMwcp/NBTrRSetQHSRxBg5YJ9TiB3J3mkp
+rbnOXPpvRDMvvlb0dok636MM7s+1qPvUYJ5WBohJu1sXfQYz1qHf4F6oUqNilyc8
+csbyS7NP5KdZsYH6N3W/gjbaKdyVRva2nzd4neZlgE4AOFe1E2COajlzBf8kPB7y
+R4ZPECphAVXwmNUZfmhiPbTugo1pwfrxd/y2+nnbq94vVjF14E7fomZ1ITNMaDYb
+2URIfL7ngfh0nPH77xyJZcddK+NcXF8Tgw9c7mvhsZAeZ8P8YgpPGrZlt8zAzSsZ
+Z372Uy7gMnHON6+oruExDYEompcvOHbWamkh3cetH44gQd0jPJ+fmOEMw4Nm+yzz
+wLZvbKDBONDrJpi5VF6I2os0+fCjh6r1ZLmK5M8HFFzYEy+Mt13P29QOT9NUYyMg
+VfQ5622g9QQvvZG4hHtlWu9Z2zRpFN3/qXLdekOvqWKupC9Ud6XbrarMcVGqSoJk
+Mf9MucVbQBSntwARbnSTZneQ8x/xru4rxYySbPkwNliHukhzthQxHX0WsppeSurp
+e5zXJ0+cEOkhZLlTqHHhg7DGbmVKR0+bi4d7ppxUQQIDAQABo4HIMIHFMBMGCisG
+AQQBgsQKBQMEBQQDBQcEMBQGCisGAQQBgsQKBQcEBgIEAW3AGjARBgorBgEEAYLE
+CgUIBAMEAQIwEQYKKwYBBAGCxAoFCQQDBAEBMBAGCisGAQQBgsQKBQEEAgwAMCQG
+CisGAQQBgsQKBQQEFgQUUHgkUgGX2ej0yHJbx65BU+e6+AswFAYKKwYBBAGCxAoF
+BQQGBARquMc+MBEGCisGAQQBgsQKBQYEAwIBBTARBgorBgEEAYLECgUCBAMCAQEw
+DQYJKoZIhvcNAQELBQADggEBAMI2tsBrHqJFcokgcV4FmN0P0OmCw2fTmsmIYaqV
+S7hQ/9tVW45RYadEqL8QzrBZ+k7YI1lOd6y14xorZBEQMd1U/8TXfdSsRFr65fAy
+Ua3e1907JlluGSIx45OXCS5qD/on/YBuTMvhS9uZozAYZiE4TC1TTWxLexZKO9Hw
+tjzaS/vWP+ovRDsk2mtAjbhb1BqVwP5XDokdrY/LXWRtQ7fyeVZIjHFceNuy2B2F
+iwMmZEaVhuSPNnI/vdZXFzsqMR101mC2Wa5Joes9QHpeZ/6Oqg1RNvjSKe0yErk0
+Dc68ZuqIFBpqa51HV2K3VbNEwqz5WHG2LxlzBrLB7xxhpwg=
+-----END CERTIFICATE-----</code></pre>
+                        <button class="copy-btn pgp-copy" data-copy-target="#pgp-attest-sig">Copy</button>
+                    </article>
+
+                    <article class="pgp-card">
+                        <h3>Encryption Key <span class="pgp-slot">ENC</span></h3>
+                        <p class="pgp-slot-desc">Attestation for the encryption (decryption) slot.</p>
+                        <dl class="pgp-meta">
+                            <div><dt>Developer</dt><dd>ckappgit</dd></div>
+                            <div><dt>Fingerprint</dt><dd><code>F41328FF398AE0934E4A480E0D2DBA9732C0AC42</code></dd></div>
+                        </dl>
+                        <pre class="pgp-pre" id="pgp-attest-enc"><code>-----BEGIN CERTIFICATE-----
+MIIEjDCCA3SgAwIBAgIQAXK2nlY+d2khzCabkCgxijANBgkqhkiG9w0BAQsFADAj
+MSEwHwYDVQQDDBhZdWJpS2V5IE9QR1AgQXR0ZXN0YXRpb24wIBcNMjQxMjAxMDAw
+MDAwWhgPOTk5OTEyMzEyMzU5NTlaMCcxJTAjBgNVBAMMHFl1YmlLZXkgT1BHUCBB
+dHRlc3RhdGlvbiBERUMwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQCu
+2fmwgkKnaOXOqqdDUm6ltsQms9LBa5Bt3zNyS48q+4K4iZxkfQKSmf91iALMztTQ
+oIKhfuvggRi0NfNwI/BbNHKdcP5MYDXujsLATYi1mlwvzl4Kv+cByWvDfGUXOaSf
+QIY0og+Vu86qcLzP7JeeSAvcAsuq4gbtfcShvTvg5RDz0WY+YuIENOQxkPJ3f0m4
+le6kM3vDfhO8wtY3adzJcgwqYGZziWVxqD2yS7eRLsNrafM39GXfe6QEJudJujB4
+wp3jnVJ4/UHt/xMEzgEEhar3w1XIXDox2Aygj/7ob6WHu0yIcGZ6iotVJCUu5aqj
+W/GgJaHM3qjStIXRcxSD/LS6//E8f6HFrCCbwVxrKYOmjVYBWSOm1eMQoTryAWXy
+BqBPeuDJspD0EEqo4TS1yPNogXXkEr6f3p/YqsyLsJcbZ/SV9dEpcol/v7qpW4nL
+BNQPG/1CKl3RY/S8KoFrssfGpwbRXZ7vrsnARp4rgVcFRWFJH02BPwxR2oQ3il8B
+WhcaPeVMtP8N0N+k8MrmGf8bplZrK4V8Hi9tmTQiYjYCDNyS7GIG9QD/D7ARnkTm
++3GxYIO3W5cjqKAFFtv5V1Qr26CEq/mBivbTYKWnEyVF5M9D1GFIcjaYfrxKshB6
+uS80KDBI0rHRP2FlwgsfYJkovFzEzYGACdWQritlzQIDAQABo4G1MIGyMBMGCisG
+AQQBgsQKBQMEBQQDBQcEMBQGCisGAQQBgsQKBQcEBgIEAW3AGjARBgorBgEEAYLE
+CgUIBAMEAQIwEQYKKwYBBAGCxAoFCQQDBAEBMBAGCisGAQQBgsQKBQEEAgwAMCQG
+CisGAQQBgsQKBQQEFgQU9BMo/zmK4JNOSkgODS26lzLArEIwFAYKKwYBBAGCxAoF
+BQQGBARquMc+MBEGCisGAQQBgsQKBQIEAwIBATANBgkqhkiG9w0BAQsFAAOCAQEA
+t0bwz0wISlU0UrPalPxMI74k0o1Yx4ri5ljrS2uDIG7PKmMYbN15oukljufvAvzx
+aTfYTA7UnfIlAOVv43ygTH68hLFmVuyf+AQf8O1t0To3D7TPY6cEIwbBlz8RRLVt
+hKMSlhHVqeS0tWRj/P5iXzPULhBlT97mA5K+9j9niShtwYAU0dwO9O9VqxhAO7MW
+WmUcD/SFg9kD41hv2RM4X3EU26ZjS86pLMsea/nFOXheonNaipTsPL0rMeSeGJ5o
+TVC9JNaAgLtwWG2QiTMmtdxY8ASyEDm7OtmbHw3kO0u9659Jc5eeTQ9+QqCKQ64k
+lqgyVFYYcjnvVrrVL10xdQ==
+-----END CERTIFICATE-----</code></pre>
+                        <button class="copy-btn pgp-copy" data-copy-target="#pgp-attest-enc">Copy</button>
+                    </article>
+
+                    <article class="pgp-card">
+                        <h3>Authentication Key <span class="pgp-slot">AUT</span></h3>
+                        <p class="pgp-slot-desc">Attestation for the authentication slot.</p>
+                        <dl class="pgp-meta">
+                            <div><dt>Developer</dt><dd>ckappgit</dd></div>
+                            <div><dt>Fingerprint</dt><dd><code>5850B2734B633AF5CB6B0813039FFD0F82A1F679</code></dd></div>
+                        </dl>
+                        <pre class="pgp-pre" id="pgp-attest-aut"><code>-----BEGIN CERTIFICATE-----
+MIIEjDCCA3SgAwIBAgIQAcCqHqaBk0asZDFD4kZLqDANBgkqhkiG9w0BAQsFADAj
+MSEwHwYDVQQDDBhZdWJpS2V5IE9QR1AgQXR0ZXN0YXRpb24wIBcNMjQxMjAxMDAw
+MDAwWhgPOTk5OTEyMzEyMzU5NTlaMCcxJTAjBgNVBAMMHFl1YmlLZXkgT1BHUCBB
+dHRlc3RhdGlvbiBBVVQwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDI
+fHdaC15sVWzT0Ydu2mz8cLAMbMlIO75XArTI3vj2+4XODOcl1eFJU/37DhVGRXmG
+F4xTptOdHh5pAS4RGD0EYPnLL8EBY8ubX6FsF9T55yrQgQ1ocP5U76TFK27BieEH
+I1i/TcSFL14sZptHgfyYhjb1oR4ybRcKHPuS2SsGxTGQ1LV5pp/nrGkwU7TKVNy1
+7Rjct4Xwmt4cQEc7gPKSNdSll+/BV5V4J7VUOqjHI0wmmbxylFQ4mN5iy05nWGZ4
+ZuREgQnZNjTo6TkFNFN+YBwhqvAscoJOMKv/SKY0NdWYraPK1T+yyUD7y2mF4OFh
+D2BJO3SekWu/rIgDHqXJNliZG/R5YGzxX68CLVTNawG0k4JirYEJNuZpjIgFolix
+lfPkdawsxu+LukicXHLzAyQgFvmsACJ5dLmsh7hSgrRx/HBMx6JSp2TstsqciEw3
+sPs6wMc7hSibcXdTV2hn/j8JfeNz06PdIuJJ7Qw6eWpvK6ok0Vb8eAlDkVzW/kyx
+Vt1V117YgjlA0o6YJck71Qo9r7tPfADpO+yvoxLq9Z4y0AxoarAu72IBeDlnthP4
+Gr7334+RMtJo4NeAJV2naSFohs7wQNKCOChd2tmo3y65HgcukK9jr0RL8pkqMLA7
+LnHFmqXpTwBVjgzpnJUsmLcqdc6TkOBXjit95tEloQIDAQABo4G1MIGyMBMGCisG
+AQQBgsQKBQMEBQQDBQcEMBQGCisGAQQBgsQKBQcEBgIEAW3AGjARBgorBgEEAYLE
+CgUIBAMEAQIwEQYKKwYBBAGCxAoFCQQDBAEBMBAGCisGAQQBgsQKBQEEAgwAMCQG
+CisGAQQBgsQKBQQEFgQUWFCyc0tjOvXLawgTA5/9D4Kh9nkwFAYKKwYBBAGCxAoF
+BQQGBARquMc+MBEGCisGAQQBgsQKBQIEAwIBATANBgkqhkiG9w0BAQsFAAOCAQEA
+VybqEQFF43ID9RhQjmGFFydYBBxmC/LOD1vVdu/Ai5+8LXHOdnwnTzKxFknX7YWK
+osK4pwB833wSDVGsSMvGUa9M1c9xmOgl4Lv/fa+OAyzse3m8FC0fm3oTh6JoMv7u
+ATwIuBWAxjeFrggjZyvXqOP1Z+Rlr5EVFjP+UQ9MWSr+nSvmzpsx5a5O3nDvS0I+
+1RzUd1bwjZMoJl09oFq/EES1sVDa+/Gze3IKqqaLYrx5Sdo3iWQF1i6x0/zGmWWm
+SG9P7byclBnUCQ/bkGBOO8GsYuEydFyqmP7/QpuXxu7rd64/d2JkBYHyWH8uPjOB
+gLci2ywD9XzNF8NEf9TBpg==
+-----END CERTIFICATE-----</code></pre>
+                        <button class="copy-btn pgp-copy" data-copy-target="#pgp-attest-aut">Copy</button>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <span class="brand-icon" aria-hidden="true">
+                    <img src="assets/logo.svg" alt="" width="28" height="28">
+                </span>
+                <span>AkiZip</span>
+            </div>
+            <div class="footer-cols">
+                <div class="footer-col">
+                    <h4>Project</h4>
+                    <a href="https://github.com/akizip/akizip" target="_blank" rel="noopener">Repository</a>
+                    <a href="https://github.com/akizip/akizip/releases" target="_blank" rel="noopener">Releases</a>
+                    <a href="https://github.com/akizip/akizip/blob/main/COPYING" target="_blank" rel="noopener">License</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Community</h4>
+                    <a href="https://github.com/akizip/akizip/issues" target="_blank" rel="noopener">Issues</a>
+                    <a href="https://github.com/akizip/akizip/pulls" target="_blank" rel="noopener">Pull Requests</a>
+                    <a href="https://github.com/akizip/akizip/discussions" target="_blank" rel="noopener">Discussions</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Disclaimer</h4>
+                    <p class="footer-note">AkiZip is an independent open source project. All product names and trademarks are the property of their respective owners.</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <span>© <span id="year"></span> AkiZip · GPL-3.0-or-later</span>
+                <span>Made with care for Linux users</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
