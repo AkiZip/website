@@ -5,43 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OpenPGP Keys — AkiZip</title>
     <meta name="description" content="Developer OpenPGP public key and YubiKey attestation certificates for the AkiZip project.">
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
 </head>
 <body>
-    <header class="blog-header navbar">
-        <div class="blog-header-inner">
-            <div class="blog-identity">
-                <a href="https://blog.akizip.top/" class="blog-logo" aria-label="AkiZip home">
-                    <img src="assets/logo.svg" alt="AkiZip" width="52" height="52">
-                </a>
-                <div class="blog-branding">
-                    <p class="blog-title"><a href="https://blog.akizip.top/">AkiZip</a></p>
-                    <p class="blog-tagline">Projects, dev logs, and more.</p>
-                </div>
-            </div>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-            <nav class="nav-links blog-navigation" aria-label="Navigation">
-                <a href="https://blog.akizip.top/">Blog</a>
-                <a href="https://matrix.to/#/#akizip:matrix.org" target="_blank" rel="noopener">Matrix</a>
-                <a href="https://github.com/AkiZip">GitHub</a>
+    <header class="site-header">
+        <div class="site-header-inner">
+            <a class="site-brand" href="index.html" aria-label="AkiZip home">
+                <img src="assets/logo.svg" alt="" width="22" height="22">
+                <span>AkiZip</span>
+            </a>
+
+            <nav class="site-nav" id="site-nav" aria-label="Primary">
+                <a href="index.html#features">Features</a>
+                <a href="index.html#formats">Formats</a>
+                <a href="index.html#install">Install</a>
                 <a href="openpgp.html" aria-current="page">OpenPGP</a>
-                <a href="https://blog.akizip.top/about-us/">About Us</a>
+                <a href="https://github.com/AkiZip" target="_blank" rel="noopener">GitHub</a>
+                <a class="nav-cta" href="index.html#install">Get AkiZip</a>
             </nav>
-            <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+
+            <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
                 <span></span><span></span>
             </button>
         </div>
     </header>
 
-    <main>
-        <section class="section">
+    <main id="main">
+        <header class="page-hero">
             <div class="container">
-                <div class="section-head">
-                    <span class="eyebrow">Security</span>
-                    <h2>OpenPGP Keys</h2>
-                    <p class="section-sub">Releases and commits are signed with the developer key below. The private keys live on YubiKey hardware tokens — the attestation certificates below prove that each key was generated on-device and never existed outside the hardware.</p>
-                </div>
+                <span class="eyebrow">Security</span>
+                <h1>OpenPGP Keys</h1>
+                <p class="lede">Releases and commits are signed with the developer key below. The private keys live on YubiKey hardware tokens — the attestation certificates below prove that each key was generated on-device and never existed outside the hardware.</p>
+            </div>
+        </header>
+
+        <section class="section section-alt">
+            <div class="container">
 
                 <!-- ============ Developer public key ============ -->
                 <div class="pgp-narrow">
@@ -291,9 +295,7 @@ q3EjhVMclPVc8TjaKQ==
     <footer class="footer">
         <div class="container footer-inner">
             <div class="footer-brand">
-                <span class="brand-icon" aria-hidden="true">
-                    <img src="assets/logo.svg" alt="" width="28" height="28">
-                </span>
+                <img src="assets/logo.svg" alt="" width="22" height="22">
                 <span>AkiZip</span>
             </div>
             <div class="footer-cols">
@@ -305,6 +307,8 @@ q3EjhVMclPVc8TjaKQ==
                 </div>
                 <div class="footer-col">
                     <h4>Community</h4>
+                    <a href="https://matrix.to/#/#akizip:matrix.org" target="_blank" rel="noopener">Matrix</a>
+                    <a href="https://mastodon.social/@akizip" target="_blank" rel="me noopener">Mastodon</a>
                     <a href="https://github.com/akizip/akizip/issues" target="_blank" rel="noopener">Issues</a>
                     <a href="https://github.com/akizip/akizip/pulls" target="_blank" rel="noopener">Pull Requests</a>
                     <a href="https://github.com/akizip/akizip/discussions" target="_blank" rel="noopener">Discussions</a>

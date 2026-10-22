@@ -5,51 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AkiZip — A Modern Archive Manager for Linux</title>
     <meta name="description" content="AkiZip is a clean, fast, and friendly archive manager designed for modern Linux desktops.">
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
 </head>
 <body>
-    <header class="blog-header navbar">
-        <div class="blog-header-inner">
-            <div class="blog-identity">
-                <a href="https://blog.akizip.top/" class="blog-logo" aria-label="AkiZip home">
-                    <img src="assets/logo.svg" alt="AkiZip" width="52" height="52">
-                </a>
-                <div class="blog-branding">
-                    <p class="blog-title"><a href="https://blog.akizip.top/">AkiZip</a></p>
-                    <p class="blog-tagline">Projects, dev logs, and more.</p>
-                </div>
-            </div>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-            <nav class="nav-links blog-navigation" aria-label="Navigation">
-                <a href="https://blog.akizip.top/">Blog</a>
-                <a href="https://matrix.to/#/#akizip:matrix.org" target="_blank" rel="noopener">Matrix</a>
-                <a href="https://mastodon.social/@akizip" target="_blank" rel="me noopener">Mastodon</a>
-                <a href="https://github.com/AkiZip">GitHub</a>
+    <header class="site-header">
+        <div class="site-header-inner">
+            <a class="site-brand" href="index.html" aria-label="AkiZip home">
+                <img src="assets/logo.svg" alt="" width="22" height="22">
+                <span>AkiZip</span>
+            </a>
+
+            <nav class="site-nav" id="site-nav" aria-label="Primary">
+                <a href="#features">Features</a>
+                <a href="#formats">Formats</a>
+                <a href="#install">Install</a>
                 <a href="openpgp.html">OpenPGP</a>
-                <a href="https://blog.akizip.top/about-us/">About Us</a>
+                <a href="https://github.com/AkiZip" target="_blank" rel="noopener">GitHub</a>
+                <a class="nav-cta" href="#install">Get AkiZip</a>
             </nav>
-            <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+
+            <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
                 <span></span><span></span>
             </button>
         </div>
     </header>
 
-    <main>
+    <main id="main">
         <section class="hero">
             <div class="container hero-inner">
-                <div class="hero-text">
+                <div class="hero-copy">
                     <span class="badge" id="version-badge"></span>
-                    <h1>A modern archive manager<br><span class="gradient-text">for the Linux desktop</span></h1>
+                    <h1>A modern archive manager<span class="hero-line-muted">for the Linux desktop</span></h1>
                     <p class="lede">AkiZip is a clean, fast, and friendly tool for everyday compression and extraction. No clutter, no surprises — just a window that gets out of your way.</p>
                     <div class="hero-cta">
-                        <a href="#install" class="btn btn-primary">Install Now</a>
+                        <a href="#install" class="btn btn-primary">Install AkiZip</a>
                         <a href="https://github.com/akizip/akizip" target="_blank" rel="noopener" class="btn btn-secondary">
-                            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55v-1.94c-3.2.69-3.87-1.54-3.87-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11.04 11.04 0 0 1 5.78 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.58.23 2.75.11 3.04.74.81 1.19 1.84 1.19 3.1 0 4.42-2.69 5.4-5.25 5.68.41.36.78 1.05.78 2.12v3.14c0 .3.21.66.79.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+                            <svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55v-1.94c-3.2.69-3.87-1.54-3.87-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11.04 11.04 0 0 1 5.78 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.58.23 2.75.11 3.04.74.81 1.19 1.84 1.19 3.1 0 4.42-2.69 5.4-5.25 5.68.41.36.78 1.05.78 2.12v3.14c0 .3.21.66.79.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
                             View Source
                         </a>
                         <a href="https://flathub.org/en/apps/top.akizip.akizip" target="_blank" rel="noopener" class="btn btn-secondary">
-                            <img src="https://flathub.org/favicon.svg" alt="" width="18" height="18">
+                            <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0 4.5-4.5M12 15 7.5 10.5M4.5 19.5h15"/></svg>
                             Flathub
                         </a>
                     </div>
@@ -64,14 +64,13 @@
 
                 <div class="hero-visual">
                     <div class="screenshot-frame">
-                        <img src="assets/shotcut.png" alt="AkiZip application window" class="hero-screenshot" loading="eager">
-                        <div class="screenshot-glow" aria-hidden="true"></div>
+                        <img src="assets/shotcut.png" alt="AkiZip application window" class="hero-screenshot" width="1898" height="1300" loading="eager">
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="features" class="section">
+        <section id="features" class="section section-alt">
             <div class="container">
                 <div class="section-head">
                     <span class="eyebrow">Features</span>
@@ -81,32 +80,32 @@
 
                 <div class="grid grid-3">
                     <article class="card">
-                        <div class="card-icon icon-blue">🎨</div>
+                        <div class="card-icon" aria-hidden="true">🎨</div>
                         <h3>Clean, Adaptive UI</h3>
                         <p>A modern interface that follows your system theme, light or dark, and feels right at home on the Linux desktop.</p>
                     </article>
                     <article class="card">
-                        <div class="card-icon icon-green">📦</div>
+                        <div class="card-icon" aria-hidden="true">📦</div>
                         <h3>Wide Format Support</h3>
                         <p>Open and create archives in many popular formats, including <code>.7z</code>, <code>.zip</code>, <code>.tar</code>, <code>.tar.gz</code>, <code>.tar.xz</code>, <code>.tar.bz2</code>, <code>.xz</code>, <code>.bz2</code>, <code>.iso</code>, and more.</p>
                     </article>
                     <article class="card">
-                        <div class="card-icon icon-orange">⚡</div>
+                        <div class="card-icon" aria-hidden="true">⚡</div>
                         <h3>Non-blocking Tasks</h3>
                         <p>Long-running operations run in background workers with live progress and a one-click cancel — the UI never freezes.</p>
                     </article>
                     <article class="card">
-                        <div class="card-icon icon-purple">🔍</div>
+                        <div class="card-icon" aria-hidden="true">🔍</div>
                         <h3>Inline Preview</h3>
                         <p>Inspect contents and metadata of an archive without extracting anything to disk first.</p>
                     </article>
                     <article class="card">
-                        <div class="card-icon icon-red">🪵</div>
+                        <div class="card-icon" aria-hidden="true">🪵</div>
                         <h3>Detailed Logs</h3>
                         <p>A dockable log panel surfaces command output and diagnostics, keeping every operation transparent.</p>
                     </article>
                     <article class="card">
-                        <div class="card-icon icon-teal">🌍</div>
+                        <div class="card-icon" aria-hidden="true">🌍</div>
                         <h3>Multilingual</h3>
                         <p>Ships with English, Simplified Chinese, Traditional Chinese, French, Italian, German, and Polish. Community translations are warmly welcomed.</p>
                     </article>
@@ -114,7 +113,7 @@
             </div>
         </section>
 
-        <section id="formats" class="section section-alt">
+        <section id="formats" class="section">
             <div class="container">
                 <div class="section-head">
                     <span class="eyebrow">Formats</span>
@@ -138,7 +137,7 @@
             </div>
         </section>
 
-        <section id="stack" class="section">
+        <section id="stack" class="section section-alt">
             <div class="container">
                 <div class="section-head">
                     <span class="eyebrow">Under the Hood</span>
@@ -183,7 +182,7 @@
             </div>
         </section>
 
-        <section id="install" class="section section-alt">
+        <section id="install" class="section">
             <div class="container">
                 <div class="section-head">
                     <span class="eyebrow">Get Started</span>
@@ -213,7 +212,7 @@
         <section class="section section-cta">
             <div class="container cta-inner">
                 <h2>Help shape AkiZip</h2>
-                <p>Open issues, send pull requests, or contribute a translation — every contribution counts.</p>
+                <p class="section-sub">Open issues, send pull requests, or contribute a translation — every contribution counts.</p>
                 <div class="hero-cta">
                     <a href="https://github.com/akizip/akizip/issues" target="_blank" rel="noopener" class="btn btn-primary">Report an Issue</a>
                     <a href="https://github.com/akizip/akizip/pulls" target="_blank" rel="noopener" class="btn btn-secondary">Open a Pull Request</a>
@@ -225,9 +224,7 @@
     <footer class="footer">
         <div class="container footer-inner">
             <div class="footer-brand">
-                <span class="brand-icon" aria-hidden="true">
-                    <img src="assets/logo.svg" alt="" width="28" height="28">
-                </span>
+                <img src="assets/logo.svg" alt="" width="22" height="22">
                 <span>AkiZip</span>
             </div>
             <div class="footer-cols">
@@ -239,6 +236,7 @@
                 </div>
                 <div class="footer-col">
                     <h4>Community</h4>
+                    <a href="https://matrix.to/#/#akizip:matrix.org" target="_blank" rel="noopener">Matrix</a>
                     <a href="https://mastodon.social/@akizip" target="_blank" rel="me noopener">Mastodon</a>
                     <a href="https://github.com/akizip/akizip/issues" target="_blank" rel="noopener">Issues</a>
                     <a href="https://github.com/akizip/akizip/pulls" target="_blank" rel="noopener">Pull Requests</a>
