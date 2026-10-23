@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OpenPGP Keys — AkiZip</title>
     <meta name="description" content="Developer OpenPGP public key and YubiKey attestation certificates for the AkiZip project.">
-    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
-    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="color-scheme" content="light">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
 </head>
@@ -14,25 +14,26 @@
     <a class="skip-link" href="#main">Skip to content</a>
 
     <header class="site-header">
-        <div class="site-header-inner">
-            <a class="site-brand" href="index.html" aria-label="AkiZip home">
+        <nav class="globalnav" aria-label="Primary">
+            <a class="globalnav-brand" href="index.html" aria-label="AkiZip home">
                 <img src="assets/logo.svg" alt="" width="22" height="22">
                 <span>AkiZip</span>
             </a>
-
-            <nav class="site-nav" id="site-nav" aria-label="Primary">
-                <a href="index.html#features">Features</a>
-                <a href="index.html#formats">Formats</a>
-                <a href="index.html#install">Install</a>
-                <a href="openpgp.html" aria-current="page">OpenPGP</a>
-                <a href="https://github.com/AkiZip" target="_blank" rel="noopener">GitHub</a>
-                <a class="nav-cta" href="index.html#install">Get AkiZip</a>
-            </nav>
-
+            <ul class="globalnav-list" id="site-nav">
+                <li><a href="index.html#features">Features</a></li>
+                <li><a href="index.html#community">Community</a></li>
+                <li><a href="index.html#formats">Formats</a></li>
+                <li><a href="index.html#install">Install</a></li>
+                <li><a href="openpgp.html" aria-current="page">OpenPGP</a></li>
+            </ul>
+            <a class="globalnav-github" href="https://github.com/akizip/akizip" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55v-1.94c-3.2.69-3.87-1.54-3.87-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11.04 11.04 0 0 1 5.78 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.58.23 2.75.11 3.04.74.81 1.19 1.84 1.19 3.1 0 4.42-2.69 5.4-5.25 5.68.41.36.78 1.05.78 2.12v3.14c0 .3.21.66.79.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+                <span>GitHub</span>
+            </a>
             <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
                 <span></span><span></span>
             </button>
-        </div>
+        </nav>
     </header>
 
     <main id="main">
@@ -293,35 +294,42 @@ q3EjhVMclPVc8TjaKQ==
     </main>
 
     <footer class="footer">
-        <div class="container footer-inner">
-            <div class="footer-brand">
-                <img src="assets/logo.svg" alt="" width="22" height="22">
-                <span>AkiZip</span>
-            </div>
-            <div class="footer-cols">
-                <div class="footer-col">
-                    <h4>Project</h4>
-                    <a href="https://github.com/akizip/akizip" target="_blank" rel="noopener">Repository</a>
-                    <a href="https://github.com/akizip/akizip/releases" target="_blank" rel="noopener">Releases</a>
-                    <a href="https://github.com/akizip/akizip/blob/main/COPYING" target="_blank" rel="noopener">License</a>
+        <div class="footer-content">
+            <nav class="footer-directory" aria-label="Footer">
+                <div class="footer-col footer-about">
+                    <a class="footer-brand" href="index.html">
+                        <img src="assets/logo.svg" alt="" width="22" height="22">
+                        <span>AkiZip</span>
+                    </a>
+                    <p>An independent open source archive manager for Linux. All product names and trademarks are the property of their respective owners.</p>
                 </div>
                 <div class="footer-col">
-                    <h4>Community</h4>
-                    <a href="https://matrix.to/#/#akizip:matrix.org" target="_blank" rel="noopener">Matrix</a>
-                    <a href="https://mastodon.social/@akizip" target="_blank" rel="me noopener">Mastodon</a>
-                    <a href="https://github.com/akizip/akizip/issues" target="_blank" rel="noopener">Issues</a>
-                    <a href="https://github.com/akizip/akizip/pulls" target="_blank" rel="noopener">Pull Requests</a>
-                    <a href="https://github.com/akizip/akizip/discussions" target="_blank" rel="noopener">Discussions</a>
+                    <h3>Project</h3>
+                    <ul>
+                        <li><a href="https://github.com/akizip/akizip" target="_blank" rel="noopener">Repository</a></li>
+                        <li><a href="https://github.com/akizip/akizip/releases" target="_blank" rel="noopener">Releases</a></li>
+                        <li><a href="https://github.com/akizip/akizip/blob/main/COPYING" target="_blank" rel="noopener">License</a></li>
+                        <li><a href="openpgp.html">OpenPGP Keys</a></li>
+                    </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Disclaimer</h4>
-                    <p class="footer-note">AkiZip is an independent open source project. All product names and trademarks are the property of their respective owners.</p>
+                    <h3>Community</h3>
+                    <ul>
+                        <li><a href="https://matrix.to/#/#akizip:matrix.org" target="_blank" rel="noopener">Matrix</a></li>
+                        <li><a href="https://mastodon.social/@akizip" target="_blank" rel="me noopener">Mastodon</a></li>
+                        <li><a href="https://github.com/akizip/akizip/discussions" target="_blank" rel="noopener">Discussions</a></li>
+                    </ul>
                 </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <div class="container">
-                <span>© <span id="year"></span> AkiZip · GPL-3.0-or-later</span>
+                <div class="footer-col">
+                    <h3>Contribute</h3>
+                    <ul>
+                        <li><a href="https://github.com/akizip/akizip/issues" target="_blank" rel="noopener">Issues</a></li>
+                        <li><a href="https://github.com/akizip/akizip/pulls" target="_blank" rel="noopener">Pull Requests</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="footer-legal">
+                <span>Copyright © <span id="year"></span> AkiZip. Licensed under GPL-3.0-or-later.</span>
                 <span>Made with care for Linux users</span>
             </div>
         </div>
